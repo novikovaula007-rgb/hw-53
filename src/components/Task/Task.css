@@ -1,12 +1,17 @@
 .taskWrapper {
     border: 2px solid black;
     width: 250px;
-    height: 30px;
+    min-height: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     margin-top: 10px;
+}
+
+.taskWrapper p {
+    word-break: break-all;
+    width: 200px;
 }
 
 .deleteButton {

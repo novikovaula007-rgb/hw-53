@@ -1,10 +1,17 @@
 import "./AddTaskForm.css"
+import * as React from "react";
 
-const AddTaskForm = () => {
+interface AddTaskProps {
+    onChangeValue: React.ChangeEventHandler<HTMLInputElement>;
+    onSubmitAdd: React.FormEventHandler<HTMLFormElement>;
+    formValue: string;
+}
+
+const AddTaskForm: React.FC<AddTaskProps> = ({onChangeValue, onSubmitAdd, formValue}) => {
     return (
-        <form>
-            <input type="text" placeholder="Add new task" className="addForm"></input>
-            <button type="button" className="addButton">Add</button>
+        <form onSubmit={onSubmitAdd}>
+            <input type="text" placeholder="Add new task" className="addForm" onChange={onChangeValue} value={formValue}></input>
+            <button type="submit" className="addButton">Add</button>
         </form>
     );
 };
