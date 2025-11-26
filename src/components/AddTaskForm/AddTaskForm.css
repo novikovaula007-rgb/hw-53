@@ -1,0 +1,13 @@
+.addButton {
+    margin-left: 10px;
+    background-color: transparent;
+    border: 2px solid black;
+    -webkit-box-shadow: 4px 4px 0 -1px rgb(0, 0, 0);
+    -moz-box-shadow: 4px 4px 0 -1px rgb(0, 0, 0);
+    box-shadow: 4px 4px 0 -1px rgb(0, 0, 0);
+}
+
+.addForm {
+    border: 2px solid black;
+    margin-bottom: 5px;
+}

@@ -1,8 +1,10 @@
+import AddTaskForm from "./components/AddTaskForm/AddTaskForm.tsx";
+
 const App = () => {
     return (
-        <div>
-
-        </div>
+        <>
+            <AddTaskForm></AddTaskForm>
+        </>
     );
 };
 
