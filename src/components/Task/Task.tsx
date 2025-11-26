@@ -2,6 +2,7 @@ import "./Task.css"
 
 interface TaskProps extends React.PropsWithChildren {
     text: string;
+    id: string;
 }
 
 const Task: React.FC<TaskProps> = ({text}) => {
